@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Heading -->
+        <TextView
+            android:id="@+id/appHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Warranty Tracker App"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="#000000" />
+
+        <!-- Top Buttons -->
+        <Button
+            android:id="@+id/manualEntryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Manually" />
+
+        <Button
+            android:id="@+id/uploadImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Image or Use Camera"
+            android:layout_marginTop="8dp" />
+
+        <!-- Image Preview -->
+        <ImageView
+            android:id="@+id/receiptPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:background="@android:color/darker_gray" />
+
+        <!-- OCR Result Display -->
+        <TextView
+            android:id="@+id/ocrResultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:text="Extracted Text Will Appear Here"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="#EEEEEE"
+            android:visibility="gone" />
+
+        <!-- Form Layout (initially hidden) -->
+        <LinearLayout
+            android:id="@+id/formLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/editProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Name"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/editPurchaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Purchase Date (yyyy-MM-dd)"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Warranty Duration (months)"
+                android:inputType="number"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Warranty"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+
+        <!-- ✅ Always Visible Button -->
+        <Button
+            android:id="@+id/viewSavedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Saved Warranties"
+            android:layout_marginTop="16dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</ScrollView>
