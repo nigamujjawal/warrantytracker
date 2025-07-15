@@ -60,7 +60,11 @@ dependencies {
 
     // RecyclerView
     implementation(libs.androidx.recyclerview)
+//    implementation(libs.google.gson)
+    implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.code.gson:gson:2.10.1")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+
 
     // ML Kit Text Recognition
     implementation("com.google.mlkit:text-recognition:16.0.0-beta4")

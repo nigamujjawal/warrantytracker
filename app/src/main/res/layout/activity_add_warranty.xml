@@ -36,6 +36,31 @@
             android:text="Upload Image or Use Camera"
             android:layout_marginTop="8dp" />
 
+        <Button
+            android:id="@+id/testNotifyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Test Notification"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+        <!-- Add this below your formLayout or anywhere appropriate -->
+        <EditText
+            android:id="@+id/editCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Company Name (e.g., Samsung)"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnFindServiceCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find Nearest Service Center"
+            android:layout_marginTop="8dp" />
+
+
+
+
         <!-- Image Preview -->
         <ImageView
             android:id="@+id/receiptPreview"
@@ -57,6 +82,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:background="#EEEEEE"
             android:visibility="gone" />
+
 
         <!-- Form Layout (initially hidden) -->
         <LinearLayout

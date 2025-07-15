@@ -1,0 +1,7 @@
+<resources>
+    <style name="MyCustomStyle" parent="Theme.AppCompat.Light">
+        <!-- customizations -->
+    </style>
+
+<!--    <drawable name="ic_notification">ic_notification</drawable>-->
+</resources>

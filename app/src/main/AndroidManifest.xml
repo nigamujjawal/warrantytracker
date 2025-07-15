@@ -7,6 +7,13 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
 
     <!-- For Android 13+ (Media Permissions) -->
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
@@ -37,6 +44,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+        <receiver android:name=".NotificationReceiver" />
 
         <!-- Activities -->
         <activity android:name=".OCRCaptureActivity" android:exported="false" />
@@ -44,8 +52,8 @@
         <activity android:name=".AddWarrantyActivity" android:exported="false" />
         <activity android:name=".ViewSavedWarrantiesActivity" android:exported="false" />
         <activity android:name=".RegisterActivity" android:exported="false" />
-        <activity android:name=".MainActivity2" android:exported="false" />
-        <activity android:name=".WarrantyItem" android:exported="false" />
+        <activity android:name=".MainActivity2" android:exported="false"/>
+        <activity android:name=".WarrantyItem" android:exported="false"/>
 
         <activity
             android:name=".LoginActivity"
